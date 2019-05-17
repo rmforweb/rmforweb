@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Купить билет</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/Rounded.css">
+	<link rel="stylesheet" href="fonts/Theano.css">
+</head>
+<body>
+	<h1 id="top">Заказать билет</h1>
+	<ul class="navigation">
+		<li><a href="index.html">Главная страница</a></li>
+		<li><a href="gallery.html">Галлерея</a></li>
+		<li><a href="wayto.html">Как добраться</a></li>
+		<li><a href="ticket.html">Купить билет</a></li>
+	</ul>
+	<img class="tick" src="img/003.jpg" alt="билет" width="600">
+	<form>
+		<label for="name">Введите ваше Ф.И.О.</label>
+		<input type="text" name="fio" id="name" required>
+		<label for="email">Ваш Email</label>
+		<input type="email" name="email" id="email" required>
+		<label for="phone">Ваш телефон</label>
+		<input type="text" name="phone" id="phone" required>
+		<br><br>
+		<label for="date">Дата</label>
+		<input type="date" name="date" id="date">
+		<br><br>
+		<label for="ticket_type">Тип билета</label>
+		<select name="ticket_type" id="ticket_type">
+			<option value="1">Стандарт</option>
+			<option value="2">Премиум</option>
+			<option value="3">Погружение в сафари</option>
+		</select>
+		<label for="adults">Количество взрослых</label>
+		<select name="adults" id="adults">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+		<label for="kids">Количество детей</label>
+		<select name="kids" id="kids">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+		<h2>Вид отдыха</h2>
+		<input type="radio" id="day" name="rest_type" value="day" checked>
+		<label for="day">День</label>
+		<input type="radio" id="day_night" name="rest_type" value="day_night">
+		<label for="day_night">День и ночь</label>
+		<h3>Дополнительные услуги</h3>
+		<input type="checkbox" id="option_1" name="option_1">
+		<label for="option_1">Джип тур</label>
+		<br><br>
+		<input type="checkbox" id="option_2" name="option_2">
+		<label for="option_2">Питание</label>
+		<br><br>
+		<input type="checkbox" id="option_3" name="option_3">
+		<label for="option_3">Экскурсии</label>
+		<br><br>
+		<input type="checkbox" id="option_4" name="option_4">
+		<label for="option_4">Прогулки в клетках со львами</label>
+		<br><br>
+		<label for="comment">Дополнительная информация</label><br>
+		<textarea name="comment" id="comment" cols="70" rows="3"></textarea><br>
+		<input type="submit">
+	</form>
+	<h2>Цена билетов</h2>
+	<table class="tabl">
+		<tr class="tabl_color">
+			<td><strong>Наименование</strong></td>
+			<td><strong>Взрослый</strong></td>
+			<td><strong>Детский</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Стандарт</strong></td>
+			<td>500</td>
+			<td>400</td>
+		</tr>
+		<tr>
+			<td><strong>Премиум</strong></td>
+			<td>900</td>
+			<td>800</td>
+		</tr>
+		<tr>
+			<td><strong>Погружение в сафари</strong></td>
+			<td>1300</td>
+			<td>1100</td>
+		</tr>
+	</table>
+	<p>Дети до 7 лет <strong>бесплатно</strong></p>
+	<p><a href="#top">Наверх</a></p>
+</body>
+</html>
